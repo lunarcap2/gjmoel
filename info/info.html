@@ -1,0 +1,327 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="keywords" content="<%=site_name%>, 화상면접, 입사지원" />
+    <meta name="description" content="<%=site_name%>, 취업지원, 채용정보, 라이브 취업특강, 현직자 특강, 온라인 취업컨설팅, 입사지원, 채용정보" />
+    <meta name="author" content="커리어" />
+    <meta name="viewport" content="width=1350">
+    <meta name="Copyright" content="희망을 전하는 취업 포털 커리어" />
+    <title>2021 광주권 온라인 채용박람회</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="<%=site_name%>" />
+    <meta property="og:description" content="<%=site_name%>, 취업지원, 채용정보, 현직자 특강, 온라인 취업컨설팅, 입사지원, 채용정보">
+    <meta property="og:image" content="<%=g_partner_wk%>/images/property_img.jpg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="210" />
+    <meta property="og:url" content="https://gjmoel.career.co.kr/" />
+    <meta property="og:site_name" content="<%=site_name%>" />
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <!-- publishUpdateDt 변수 선언 파일 위치 → /common/constant.asp -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css?<%=publishUpdateDt%>" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css?<%=publishUpdateDt%>" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css?<%=publishUpdateDt%>1" />
+    <link rel="stylesheet" type="text/css" href="../css/popup.css?<%=publishUpdateDt%>" />
+
+
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/jquery.bxSlider.min.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/jquery.placeholder.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/placeholders.jquery.min.js?<%=publishUpdateDt%>"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="../css/fair_sub.css?<%=publishUpdateDt%>" />
+    <link rel="stylesheet" type="text/css" href="../css/fair_jobs.css?<%=publishUpdateDt%>" />
+    <link rel="stylesheet" type="text/css" href="../css/fair_my.css?<%=publishUpdateDt%>" />
+    <link rel="stylesheet" type="text/css" href="../css/fair_main.css?<%=publishUpdateDt%>" />
+    <link rel="stylesheet" type="text/css" href="../css/teaser2.css?<%=publishUpdateDt%>" />
+
+
+
+    <script type="text/javascript" src="../js/comm_2009.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/common2.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/validateCommon.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/ui.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/view2015.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/code.js?<%=publishUpdateDt%>"></script>
+
+
+    <!-- 카카오모먼트 방문 스크립트 -->
+    <script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/adfit/static/kp.js"></script>
+    <script type="text/javascript">
+        kakaoPixel('7680090866039896455').pageView('태그값입력');
+
+    </script>
+    <!-- 카카오모먼트 방문 스크립트 -->
+
+    <script type="text/javascript">
+        jQuery(window).load(function() {
+
+            //GNB 메뉴 활성화
+            var g_menu_navi = '<%=g_MenuID_Navi%>';
+            if (g_menu_navi != '') {
+                var navi_top = g_menu_navi.split(',')[0];
+                var navi_sub = g_menu_navi.split(',')[1];
+
+                $('.gnb .parent .m' + navi_top + ' .mbtn').addClass('on');
+            }
+
+        });
+
+    </script>
+
+
+
+
+</head>
+
+<body id="main">
+
+
+    <!-- Skipnavi -->
+    <div id="skipnavi">
+        <a href="#header-id">상단 바로가기</a>
+        <a href="#contents-id">본문 바로가기</a>
+        <a href="#footer-id">하단 바로가기</a>
+    </div>
+    <!-- // Skipnavi -->
+
+    <!-- 상단 -->
+    <div id="header">
+        <div class="header-wrap">
+            <div class="header_top">
+                <div class="logo">
+                    <h1><a href="../default.html"><img src="../images/logo.png" alt="<%=site_name%>" /></a></h1>
+                </div><!-- .logo -->
+            </div>
+
+            <div class="gnb-wrap" id="gnb-kornu">
+                <div class="inner">
+
+                    <div class="gnb">
+                        <ul class="parent">
+                            <li class="m m1">
+                                <a href="info.html" class="mbtn">박람회 안내</a>
+                            </li>
+                            <li class="m m2">
+                                <a href="../jobs/list.html" class="mbtn">채용공고</a>
+                            </li>
+
+                            <!-------------------------------------------------------------------------------------------------
+						비로그인(0), 기업로그인(2), 컨설턴트로그인(3), 관리자로그인(9), 취업스쿨컨설턴트로그인(4) ---- start
+						-------------------------------------------------------------------------------------------------->
+                            <li class="m m3">
+                                <a href="../consulting/schedule.html" class="mbtn">컨설팅ㆍ특강</a>
+                                <ul class="depth2">
+                                    <li><a href="../consulting/schedule.html">전체 일정표</a></li>
+                                    <li><a href="../consulting/consult_list_mem.html">구직자 컨설팅</a></li>
+                                    <li><a href="../lecture/list.html">구직자 특강</a></li>
+                                    <li><a href="/educe/guid.asp">구직자 AI 역량검사</a></li>
+                                    <li><a href="/consulting/consult_list_biz.asp">기업지원 컨설팅</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="m m4">
+                                <a href="/board/notice_list.asp?gubun=4" class="mbtn">취업자료실</a>
+                                <ul class="depth2">
+                                    <li><a href="/board/notice_list.asp?gubun=4">정책 영상 홍보관</a></li>
+                                    <li><a href="/tools/salary_calculator.asp">스마트계산기</a></li>
+                                    <li><a href="/board/notice_list.asp?gubun=6">카드뉴스</a></li>
+                                </ul>
+                            </li>
+                            <li class="m m5">
+                                <a href="/board/notice_list.asp" class="mbtn">공지사항</a>
+                                <ul class="depth2">
+                                    <li><a href="/board/notice_list.asp">공지사항</a></li>
+                                    <li><a href="/board/event_list.asp">이벤트</a></li>
+                                    <li><a href="/board/list.asp?gubun=2">자주 묻는 질문</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="m my">
+                                <!---------------------------------------------------------------------------------------
+							비로그인(0), 컨설턴트로그인(3), 관리자로그인(9), 취업스쿨컨설턴트로그인(4) ---- start
+							---------------------------------------------------------------------------------------->
+                                <% If g_LoginChk = "0" Or g_LoginChk = "3" Or g_LoginChk = "9" Or g_LoginChk = "4" Then %>
+                                <div class="menu">
+                                    <a href="#none" class="member">구직자</a>
+                                    <div class="my_box" style="display: none; height: 331px; padding-top: 17px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                                        <div>
+                                            <p>기업에 취업을 원하시나요?</p>
+                                            <div class="btn_area">
+                                                <a href="/my/login.asp" class="btn blue">로그인</a>
+                                                <a href="/my/signup/join.asp" class="btn gray">회원가입</a>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li><a href="javaScript:void(0)">구직자 컨설팅 현황</a></li>
+                                            <li><a href="javaScript:void(0)">구직자 특강 현황</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!---------------------------------------------------------------------------------------
+							비로그인(0), 컨설턴트로그인(3), 관리자로그인(9), 취업스쿨컨설턴트로그인(4) ---- end
+							---------------------------------------------------------------------------------------->
+
+                                <!-----------------------------------------------------------------------
+							개인로그인(1) ---- start
+							----------------------------------------------------------------------->
+                                <% ElseIf g_LoginChk = "1" Then %>
+                                <div class="menu v2">
+                                    <a href="#none" class="my_page">my</a>
+                                    <div class="my_box">
+                                        <div class="info">
+                                            <p><span>박정완</span>님</p>
+                                            <div class="btn_area">
+                                                <a href="/logout.asp" class="btn gray">로그아웃</a>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li><a href="/my/consulting_list.asp">구직자 컨설팅 현황</a></li>
+                                            <li><a href="/my/lecture_list.asp">구직자 특강 현황</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-----------------------------------------------------------------------
+							개인로그인(1) ---- end
+							----------------------------------------------------------------------->
+
+                                <!-----------------------------------------------------------------------
+							기업로그인(2) ---- start
+							----------------------------------------------------------------------->
+                                <!-----------------------------------------------------------------------
+							기업로그인(2) ---- end
+							----------------------------------------------------------------------->
+                            </li>
+
+                            <script>
+                                $('.gnb .m').hover(function() {
+                                    $(this).find('.depth2').stop().slideDown(200);
+                                }, function() {
+                                    $(this).find('.depth2').stop().slideUp(200);
+                                });
+                                $('.gnb .my .menu').hover(function() {
+                                    $(this).find('.my_box').stop().slideDown(200);
+                                }, function() {
+                                    $(this).find('.my_box').stop().slideUp(200);
+                                });
+
+                            </script>
+
+                        </ul>
+                    </div><!-- .gnb -->
+                </div>
+            </div><!-- .gnb-wrap -->
+        </div><!-- .header-wrap -->
+    </div>
+
+</head>
+
+<body>
+<!-- 상단 -->
+<!--#include virtual = "/include/gnb/topMenu.asp"-->
+
+
+<!-- 본문 -->
+<!-- 본문 -->
+<div id="contents">
+	<div class="sub_visual info">
+		<div class="visual_area">
+			<h2>박람회 안내</h2>
+		</div>
+	</div>
+	<div class="content">
+		<div class="con_box">
+			<!-- <div class="info_area">
+				<div class="info_dl">
+					<dl>
+						<dt><img src="../images/jobs/info_dl_tit.png" alt="공공데이터 청년인턴 온라인 채용박람회"></dt>
+						<dd>
+							<div class="info_box">
+								<span>박람회 기간</span><br>
+								2021년 1월 4일(월) ~ 1월 22일(금)<br><br>
+								<span>주최</span>행정안전부<br>
+								<span>주관</span>한국지능정보사회진흥원
+							</div>
+
+							<div class="info_box">
+								<span>박람회 구성</span><br>
+								채용정보, 취업컨설팅, 취업특강, 이벤트<br>
+								<span>참여대상</span><br>
+								IT업종 기업 및 공공데이터 청년 인턴 수료자
+							</div>
+
+							<div class="info_box">
+								<span>운영기관</span><br>
+								HYOSUNG ITX, 취업포털 커리어
+							</div>
+
+							<div class="info_box">
+								<span>사이트</span><br>
+								goodatajobfair.career.co.kr
+							</div>
+						</dd>
+
+					</dl>
+				</div>
+				<div class="info_box">
+					<div class="tit">
+						<h4>박람회 참여방법</h4>
+					</div>
+					<div class="info_way">
+						<dl>
+							<dt>인턴 수료자 참여방법</dt>
+							<dd>step.1 회원가입 및 입사지원서 등록</dd><dd>
+							</dd><dd>step.2 채용정보 확인 및 입사지원</dd><dd>
+							</dd><dd>step.3 채용정보 확인 및 입사지원</dd><dd>
+							</dd><dd>step.4 채용정보 확인 및 입사지원</dd><dd>
+						</dd></dl>
+						<dl>
+							<dt>기업 참여방법</dt>
+							<dd>step.1 회원가입 및 입사지원서 등록</dd><dd>
+							</dd><dd>step.2 입사지원자 서류 검토</dd><dd>
+							</dd><dd>step.3 채용정보 확인 및 입사지원</dd><dd>
+							</dd><dd>step.4 채용정보 확인 및 입사지원</dd><dd>
+						</dd></dl>
+					</div>
+				</div>
+			</div> --><!-- //info_area -->
+			<img src="../images/dummy002.png?v=3" alt="" />
+		</div>
+	</div><!-- .content -->
+
+</div>
+<!-- //본문 -->
+<!-- //본문 -->
+
+<!-- 하단 -->
+    <div id="footer">
+        <div class="footer-wrap">
+            <div class="footer_logo">
+                <img src="../images/footer_logo.png" alt="footer로고">
+            </div>
+            <div class="privacyArea">
+                <a href="#privacyPop" class="btn">개인정보처리방침</a>
+                <p class="manage">2021 광주권 온라인 채용박람회 공식 홈페이지는 [취업포털 커리어]가<br>제작 및 유지보수를 담당하고 있습니다.</p>
+                <p class="help">TEL. TEL. 02-2006-6131~3 | FAX. 02-2006-9594 | E-mail. gjmoel@career.co.kr</p>
+                <p class="company_info">상호명. 커리어넷 | 대표자명. 윤태운 | 사업자등록번호. 220-86-73547</p>
+                <p class="copyright">Copyright. &copy; 취업포털 커리어. all rights reserved.</p>
+            </div><!-- .util-area -->
+
+            <div class="InternetSafe">
+                <strong>인터넷 사이트 안전마크</strong>
+                <p>2021 광주권 온라인 채용박람회 공식 홈페이지는 개인정보 보호를 위한<br>
+                    관련법령의 의무사항을 준수하고 있습니다.</p>
+            </div><!-- .address -->
+        </div><!-- .inner-wrap -->
+    </div>
+    <!-- //하단 -->
+
+</body>
+</html>

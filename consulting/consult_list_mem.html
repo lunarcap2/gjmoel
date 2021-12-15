@@ -1,0 +1,768 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="keywords" content="<%=site_name%>, 화상면접, 입사지원" />
+    <meta name="description" content="<%=site_name%>, 취업지원, 채용정보, 라이브 취업특강, 현직자 특강, 온라인 취업컨설팅, 입사지원, 채용정보" />
+    <meta name="author" content="커리어" />
+    <meta name="viewport" content="width=1350">
+    <meta name="Copyright" content="희망을 전하는 취업 포털 커리어" />
+    <title>2021 광주권 온라인 채용박람회</title>
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="<%=site_name%>" />
+    <meta property="og:description" content="<%=site_name%>, 취업지원, 채용정보, 현직자 특강, 온라인 취업컨설팅, 입사지원, 채용정보">
+    <meta property="og:image" content="<%=g_partner_wk%>/images/property_img.jpg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="210" />
+    <meta property="og:url" content="https://gjmoel.career.co.kr/" />
+    <meta property="og:site_name" content="<%=site_name%>" />
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <!-- publishUpdateDt 변수 선언 파일 위치 → /common/constant.asp -->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css?<%=publishUpdateDt%>" />
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css?<%=publishUpdateDt%>" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css?<%=publishUpdateDt%>1" />
+    <link rel="stylesheet" type="text/css" href="../css/popup.css?<%=publishUpdateDt%>" />
+
+
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/jquery-ui.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/jquery.bxSlider.min.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/jquery.placeholder.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/placeholders.jquery.min.js?<%=publishUpdateDt%>"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="../css/fair_sub.css?<%=publishUpdateDt%>" />
+    <link rel="stylesheet" type="text/css" href="../css/fair_jobs.css?<%=publishUpdateDt%>" />
+    <link rel="stylesheet" type="text/css" href="../css/fair_my.css?<%=publishUpdateDt%>" />
+    <link rel="stylesheet" type="text/css" href="../css/fair_main.css?<%=publishUpdateDt%>" />
+    <link rel="stylesheet" type="text/css" href="../css/teaser2.css?<%=publishUpdateDt%>" />
+
+
+
+    <script type="text/javascript" src="../js/comm_2009.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/common2.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/validateCommon.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/ui.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/view2015.js?<%=publishUpdateDt%>"></script>
+    <script type="text/javascript" src="../js/code.js?<%=publishUpdateDt%>"></script>
+
+
+    <!-- 카카오모먼트 방문 스크립트 -->
+    <script type="text/javascript" charset="UTF-8" src="//t1.daumcdn.net/adfit/static/kp.js"></script>
+    <script type="text/javascript">
+        kakaoPixel('7680090866039896455').pageView('태그값입력');
+
+    </script>
+    <!-- 카카오모먼트 방문 스크립트 -->
+
+    <script type="text/javascript">
+        jQuery(window).load(function() {
+
+            //GNB 메뉴 활성화
+            var g_menu_navi = '<%=g_MenuID_Navi%>';
+            if (g_menu_navi != '') {
+                var navi_top = g_menu_navi.split(',')[0];
+                var navi_sub = g_menu_navi.split(',')[1];
+
+                $('.gnb .parent .m' + navi_top + ' .mbtn').addClass('on');
+            }
+
+        });
+
+    </script>
+
+
+
+
+</head>
+
+<body id="main">
+
+
+    <!-- Skipnavi -->
+    <div id="skipnavi">
+        <a href="#header-id">상단 바로가기</a>
+        <a href="#contents-id">본문 바로가기</a>
+        <a href="#footer-id">하단 바로가기</a>
+    </div>
+    <!-- // Skipnavi -->
+
+    <!-- 상단 -->
+    <div id="header">
+        <div class="header-wrap">
+            <div class="header_top">
+                <div class="logo">
+                    <h1><a href="../default.html"><img src="../images/logo.png" alt="<%=site_name%>" /></a></h1>
+                </div><!-- .logo -->
+            </div>
+
+            <div class="gnb-wrap" id="gnb-kornu">
+                <div class="inner">
+
+                    <div class="gnb">
+                        <ul class="parent">
+                            <li class="m m1">
+                                <a href="../info/info.html" class="mbtn">박람회 안내</a>
+                            </li>
+                            <li class="m m2">
+                                <a href="../jobs/list.html" class="mbtn">채용공고</a>
+                            </li>
+
+                            <!-------------------------------------------------------------------------------------------------
+						비로그인(0), 기업로그인(2), 컨설턴트로그인(3), 관리자로그인(9), 취업스쿨컨설턴트로그인(4) ---- start
+						-------------------------------------------------------------------------------------------------->
+                            <li class="m m3">
+                                <a href="schedule.html" class="mbtn">컨설팅ㆍ특강</a>
+                                <ul class="depth2">
+                                    <li><a href="schedule.html">전체 일정표</a></li>
+                                    <li><a href="consult_list_mem.html">구직자 컨설팅</a></li>
+                                    <li><a href="../lecture/list.html">구직자 특강</a></li>
+                                    <li><a href="/educe/guid.asp">구직자 AI 역량검사</a></li>
+                                    <li><a href="/consulting/consult_list_biz.asp">기업지원 컨설팅</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="m m4">
+                                <a href="/board/notice_list.asp?gubun=4" class="mbtn">취업자료실</a>
+                                <ul class="depth2">
+                                    <li><a href="/board/notice_list.asp?gubun=4">정책 영상 홍보관</a></li>
+                                    <li><a href="/tools/salary_calculator.asp">스마트계산기</a></li>
+                                    <li><a href="/board/notice_list.asp?gubun=6">카드뉴스</a></li>
+                                </ul>
+                            </li>
+                            <li class="m m5">
+                                <a href="/board/notice_list.asp" class="mbtn">공지사항</a>
+                                <ul class="depth2">
+                                    <li><a href="/board/notice_list.asp">공지사항</a></li>
+                                    <li><a href="/board/event_list.asp">이벤트</a></li>
+                                    <li><a href="/board/list.asp?gubun=2">자주 묻는 질문</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="m my">
+                                <!---------------------------------------------------------------------------------------
+							비로그인(0), 컨설턴트로그인(3), 관리자로그인(9), 취업스쿨컨설턴트로그인(4) ---- start
+							---------------------------------------------------------------------------------------->
+                                <% If g_LoginChk = "0" Or g_LoginChk = "3" Or g_LoginChk = "9" Or g_LoginChk = "4" Then %>
+                                <div class="menu">
+                                    <a href="#none" class="member">구직자</a>
+                                    <div class="my_box" style="display: none; height: 331px; padding-top: 17px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                                        <div>
+                                            <p>기업에 취업을 원하시나요?</p>
+                                            <div class="btn_area">
+                                                <a href="/my/login.asp" class="btn blue">로그인</a>
+                                                <a href="/my/signup/join.asp" class="btn gray">회원가입</a>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li><a href="javaScript:void(0)">구직자 컨설팅 현황</a></li>
+                                            <li><a href="javaScript:void(0)">구직자 특강 현황</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!---------------------------------------------------------------------------------------
+							비로그인(0), 컨설턴트로그인(3), 관리자로그인(9), 취업스쿨컨설턴트로그인(4) ---- end
+							---------------------------------------------------------------------------------------->
+
+                                <!-----------------------------------------------------------------------
+							개인로그인(1) ---- start
+							----------------------------------------------------------------------->
+                                <% ElseIf g_LoginChk = "1" Then %>
+                                <div class="menu v2">
+                                    <a href="#none" class="my_page">my</a>
+                                    <div class="my_box">
+                                        <div class="info">
+                                            <p><span>박정완</span>님</p>
+                                            <div class="btn_area">
+                                                <a href="/logout.asp" class="btn gray">로그아웃</a>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li><a href="/my/consulting_list.asp">구직자 컨설팅 현황</a></li>
+                                            <li><a href="/my/lecture_list.asp">구직자 특강 현황</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-----------------------------------------------------------------------
+							개인로그인(1) ---- end
+							----------------------------------------------------------------------->
+
+                                <!-----------------------------------------------------------------------
+							기업로그인(2) ---- start
+							----------------------------------------------------------------------->
+                                <!-----------------------------------------------------------------------
+							기업로그인(2) ---- end
+							----------------------------------------------------------------------->
+                            </li>
+
+                            <script>
+                                $('.gnb .m').hover(function() {
+                                    $(this).find('.depth2').stop().slideDown(200);
+                                }, function() {
+                                    $(this).find('.depth2').stop().slideUp(200);
+                                });
+                                $('.gnb .my .menu').hover(function() {
+                                    $(this).find('.my_box').stop().slideDown(200);
+                                }, function() {
+                                    $(this).find('.my_box').stop().slideUp(200);
+                                });
+
+                            </script>
+
+                        </ul>
+                    </div><!-- .gnb -->
+                </div>
+            </div><!-- .gnb-wrap -->
+        </div><!-- .header-wrap -->
+    </div>
+
+</head>
+
+<body>
+<!-- 상단 -->
+<script type="text/javascript" src="https://job3.career.co.kr/js/cat_jc.js"></script>
+<script type="text/javascript" src="./js/calendar.js"></script>
+<script type="text/javascript" src="./js/consulting.js"></script>
+<script type="text/javascript">
+	// 진로 컨설팅 기본 선택
+	$(document).ready(function() { fn_sel_consultant('7'); });
+
+	var diart_date = 'empty';
+	$(document).ready(function () {
+		onLoad_Action(); //달력로드
+		fn_interview_time_disable(); //시간 모두선택 안됨(초기화)
+	});
+
+
+	// 컨설팅 신청 레이어 호출 - 신청자 정보 입력 팝업
+	function openLayer_consReq() {
+		var consultant_id	= $('#set_consultant_id').val();
+		var consultant_day	= $('#set_interview_day').val();
+		var consultant_time = "";
+
+		$("#pop_request_consulting").hide();
+
+		$('input[name="set_interview_time"]').each(function() {
+			if (this.checked == true) {
+				consultant_time = this.value;
+			}
+		});
+
+		if (consultant_id == "") {
+			alert("신청하실 컨설팅 항목을 선택해 주세요.");
+			return;
+		}else if (consultant_day == "") {
+			alert("일자를 선택해 주세요.");
+			return;
+		}else if (consultant_time == "") {
+			alert("시간을 선택해 주세요.");
+			return;
+		}else {
+			$("#pop_request_consulting").show();
+		}
+	}
+
+	// 컨설팅 신청
+	function fn_submit() {
+		var consultant_id		= $('#set_consultant_id').val();
+		var consultant_day		= $('#set_interview_day').val();
+
+		var consultant_time = "";
+
+		$('input[name="set_interview_time"]').each(function() {
+			if (this.checked == true) {
+				consultant_time = this.value;
+			}
+		});
+
+		if (consultant_id == "") {
+			alert("신청하실 컨설팅 항목을 선택해 주세요.");
+			return;
+		}
+
+		if (consultant_day == "") {
+			alert("일자를 선택해 주세요.");
+			return;
+		}
+
+		if (consultant_time == "") {
+			alert("시간을 선택해 주세요.");
+			return;
+		}
+
+<%If chkJoinInfo=0 Then%>
+		/*
+		if (sel_final_scholar == "") {
+			alert("최종학력을 선택해 주세요.");
+			$("#sel_final_scholar").focus();
+			return;
+		}
+
+		if (txt_birth == "") {
+			alert("생년월일을 입력해 주세요.");
+			$("#txt_birth").focus();
+			return;
+		}else{
+
+			if (txt_birth.length < 8){
+				alert("생년월일을 정확하게 입력해 주세요.\n(ex: 생년월일 = 2002년 1월 3일 → 20020103)");
+				$("#txt_birth").focus();
+				return;
+			}
+
+			var chkBirth		= $('#txt_birth').val();
+			chkBirth			= chkBirth.replace(".", "");
+			chkBirth			= chkBirth.replace(".", "");
+			var rxDatePattern	= /^(\d{4})(\d{1,2})(\d{1,2})$/;	// Declare Regex
+			var dtArray			= chkBirth.match(rxDatePattern);	// is format OK?
+
+			// Checks for yyyymmdd format.
+			dtYear	= dtArray[1];
+			dtMonth = dtArray[2];
+			dtDay	= dtArray[3];
+
+			var today = new Date();
+			var year  = today.getFullYear(); // 현재연도
+			var month = today.getMonth()+1;  // 현재월
+
+			if (dtYear < 1940 || dtYear > year){
+				alert("입력하신 생년월일의 연도 정보가 유효하지 않습니다.\n(1940~"+year+"년도 사이의 숫자만 입력 가능)");
+				return false;
+
+			if (dtYear < 1960 || dtYear > 2006){
+				alert("입력하신 생년월일의 연도 정보가 유효하지 않습니다.\n(1960~2006년도 사이의 숫자만 입력 가능)");
+				return false;
+			}
+
+			if (dtYear == year && dtMonth > month){
+				alert("현재일자보다 미래의 날짜로 생년월일 정보가 입력되었습니다.\n다시 확인해 주세요.");
+				return false;
+			}
+
+			if (dtMonth < 1 || dtMonth > 12){
+				alert("입력하신 생년월일의 월 단위 정보가 유효하지 않습니다.");
+				return false;
+			}
+
+			if (dtDay < 1 || dtDay > 31){
+				alert("입력하신 생년월일의 일자 정보가 유효하지 않습니다.");
+				return false;
+			}
+
+			if (dtMonth == 2) {
+				var isleap = (dtYear % 4 == 0 && (dtYear % 100 != 0 || dtYear % 400 == 0));
+				if (dtDay > 29 || (dtDay == 29 && !isleap)){
+					var strFebDay;
+					if (isleap == true){
+						strFebDay = "29";
+					}else{
+						strFebDay = "28";
+					}
+
+					alert(dtYear+"년 2월의 마지막 날짜는 "+strFebDay+"일 입니다.");
+					return false;
+				}
+			}
+			}
+		}
+		*/
+
+<%End If%>
+
+		var txtCons;
+		switch (consultant_id){
+			case "7" :
+				txtCons = "구직자 컨설팅";
+				break;
+
+			default :
+				txtCons = "";
+		}
+
+
+		var val_joinInfo = $('#hid_chkJoinInfo').val();
+		var strMsg;
+		switch (val_joinInfo){
+			case "0" :
+				strMsg = "\n입력하신 희망직무와 사전질문 토대로 취업전문 컨설턴트와\n1:1 취업지원 컨설팅이 진행됩니다.";
+				break;
+			default :
+				strMsg = "";
+		}
+
+
+		if (confirm(consultant_day+" "+getInterviewTime(consultant_time)+"로\n"+txtCons+" 일정을 선택하셨습니다."+strMsg+"\n신청 이후에는 날짜 및 시간대 변경이 불가능 합니다.\n신청하시겠습니까?")) {
+			$('#frm_pop').submit();
+		}
+
+	}
+
+	// 컨설팅 종료 알람
+	function fn_submit_end() {
+		alert('4월 2일자(17:30 기준)로 취업 컨설팅이 종료되었습니다.');
+	}
+
+	// 숫자 값만 입력
+	function onlyNumber(event) {
+		event = event || window.event;
+		var keyID = (event.which) ? event.which : event.keyCode;
+		if ( (keyID >= 48 && keyID <= 57) || (keyID >= 96 && keyID <= 105) || keyID == 8 || keyID == 46 || keyID == 37 || keyID == 39 )
+			return;
+		else
+			return false;
+	}
+
+	function removeChar(event) {
+		event = event || window.event;
+		var keyID = (event.which) ? event.which : event.keyCode;
+		if ( keyID == 8 || keyID == 46 || keyID == 37 || keyID == 39 )
+			return;
+		else
+			event.target.value = event.target.value.replace(/[^0-9]/g, "");
+	}
+
+	// 1차 직무 선택 값에 따라 연관 2차 직무 항목 제어
+	
+	function fn_change_jc1(picked) {
+		fn_clear_jc2();
+
+		if(picked == ""){
+			return;
+		}
+
+		k=1;
+		for(j=0; j<cat_fld2.length; j++){
+			if(cat_fld2[j][1] == picked){
+				document.frm_pop.sel_jc2.options[k] = new Option(cat_fld2[j][2],cat_fld2[j][0]);
+				k++;
+			}
+		}
+	}
+
+	function fn_clear_jc2() {
+		$('#set_jc2_txt').text("2차 직무를 선택해 주세요.");
+
+		for(j=document.frm_pop.sel_jc2.length-1; j>0; j--)
+			document.frm_pop.sel_jc2.options[j] = null;
+			document.frm_pop.sel_jc2.options[0] = new Option("2차 직무를 선택해 주세요.","");
+			document.frm_pop.sel_jc2.options[0].selected = true;
+	}
+	
+
+	//생년월일 변환 19900312 -> 1990.03.12
+	/*function changeBirthType22(obj) {
+		temp_value = obj.value.toString().replaceAll(".", "");
+
+		if (temp_value.length > 8){
+			alert("입력한 생년월일 정보가 유효하지 않습니다.");
+			obj.value = temp_value.substring(0,8);
+
+			if (temp_value.length = 4) {
+				obj.value = temp_value.substr(0, 4) + "." + temp_value.substr(4);
+			}
+
+			if (temp_value.length = 6) {
+				obj.value = temp_value.substr(0, 4) + "." + temp_value.substr(4, 2) + "." + temp_value.substr(6);
+			}
+
+		}else{
+
+			if (temp_value.length = 4) {
+			obj.value = temp_value.substr(0, 4) + "." + temp_value.substr(4);
+			}
+
+			if (temp_value.length = 6) {
+				obj.value = temp_value.substr(0, 4) + "." + temp_value.substr(4, 2) + "." + temp_value.substr(6);
+			}
+
+		}
+	}*/
+</script>
+</head>
+
+<body>
+<!-- 상단 -->
+<!--#include virtual = "/include/gnb/topMenu.asp"-->
+
+<form id="frm_pop" name="frm_pop" method="post" action="./proc_consult_save.asp">
+<input type="hidden" id="set_consultant_id" name="set_consultant_id" value="">
+<input type="hidden" id="set_interview_day" name="set_interview_day" value="">
+<input type="hidden" id="hid_chkJoinInfo" name="hid_chkJoinInfo" value="<%=chkJoinInfo%>">
+
+
+<!-- 본문 -->
+<div id="contents" class="sub_page">
+	<div class="sub_visual consulting">
+		<div class="visual_area">
+			<h2>구직자 컨설팅</h2>
+		</div>
+	</div>
+
+	<div class="content">
+		<div class="con_box">
+			<div class="consul_area">
+
+				<input type="hidden" id="str_set_interview_day" name="str_set_interview_day" value="">
+				<input type="hidden" id="str_set_interview_time" name="str_set_interview_time" value="">
+
+				<div class="consul_moth" style="display:block;">
+
+					<dl id="mentor_area_7" class="what" style="display:;">
+						<dt>구직자 컨설팅이란?</dt>
+						<dd>
+							진로, 자기소개서, 면접 등 포괄적인 주제로 상담이 가능합니다.<br>
+							구직자 취업 컨설팅을 활용하여 취업 준비에 부족한 부분을 보완해 보세요.
+						</dd>
+					</dl>
+
+
+					<dl class="apply2">
+						<dt>신청방법</dt>
+						<dd>
+							<strong>Step1.</strong>에서 선택이 가능한 일자를 선택 후<br>
+							<strong>Step2.</strong>에서 가능시간을 선택, 일자와 시간을 다시 한번 확인 후<br>
+							<strong>Step3.</strong> <span>컨설팅 신청하기</span> 버튼을 클릭하면 신청이 완료됩니다.
+						</dd>
+					</dl>
+
+					<div class="left_sec">
+						<h4><img src="/images/jobs/consulting_tit1.png" alt="step1"></h4>
+
+						<!-- 달력 -->
+<div class="calendar_box">
+							<!-- 기준년월 영역 -->
+							<div id="calendar_date_in"><button type="button" class="btn left" onclick="prev_b_Action();">왼쪽</button><p><span>2021</span>.<span>12</span>.</p><button type="button" class="btn right" onclick="next_b_Action();">오른쪽</button></div>
+
+							<!-- 달력영역 -->
+							<div id="table-id"><table class="calendar_tb">	<colgroup>		<col>		<col>		<col>		<col>		<col>		<col>		<col>	</colgroup>	<thead>		<tr>			<th>일</th>			<th>월</th>			<th>화</th>			<th>수</th>			<th>목</th>			<th>금</th>			<th>토</th>		</tr>	</thead>	<tbody><tr><td></td><td></td><td></td><td>	<button type="button" class="day_btn today disable" readonly="readonly" disabled="disabled" value="2021-12-01" onclick="day_btn_click(this)">1</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-02" onclick="day_btn_click(this)">2</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-03" onclick="day_btn_click(this)">3</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-04" onclick="day_btn_click(this)">4</button></td></tr><tr><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-05" onclick="day_btn_click(this)">5</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-06" onclick="day_btn_click(this)">6</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-07" onclick="day_btn_click(this)">7</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-08" onclick="day_btn_click(this)">8</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-09" onclick="day_btn_click(this)">9</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-10" onclick="day_btn_click(this)">10</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-11" onclick="day_btn_click(this)">11</button></td></tr><tr><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-12" onclick="day_btn_click(this)">12</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-13" onclick="day_btn_click(this)">13</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-14" onclick="day_btn_click(this)">14</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-15" onclick="day_btn_click(this)">15</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-16" onclick="day_btn_click(this)">16</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-17" onclick="day_btn_click(this)">17</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-18" onclick="day_btn_click(this)">18</button></td></tr><tr><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-19" onclick="day_btn_click(this)">19</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-20" onclick="day_btn_click(this)">20</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-21" onclick="day_btn_click(this)">21</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-22" onclick="day_btn_click(this)">22</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-23" onclick="day_btn_click(this)">23</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-24" onclick="day_btn_click(this)">24</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-25" onclick="day_btn_click(this)">25</button></td></tr><tr><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-26" onclick="day_btn_click(this)">26</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-27" onclick="day_btn_click(this)">27</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-28" onclick="day_btn_click(this)">28</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-29" onclick="day_btn_click(this)">29</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-30" onclick="day_btn_click(this)">30</button></td><td>	<button type="button" class="day_btn disable" readonly="readonly" disabled="disabled" value="2021-12-31" onclick="day_btn_click(this)">31</button></td><td></td></tr></tbody></table></div>
+						</div>
+
+					</div>
+
+
+					<!-- 시간선택 -->
+<div class="right_sec">
+						<h4></h4>
+						<!--
+						<p style="color:#005fbd;font-size:15px;font-weight:bold;padding-bottom:10px;">모든 날짜 시간대의 컨설팅 신청 접수 마감되었습니다.</p>
+						-->
+
+						
+						<!-- 자소서/면접 컨설팅 신청 가능 시간대(25분 단위) -->
+						<div id="cons_1" class="ul_box" style="display:;">
+							<ul class="t_ul">
+								
+								<li>
+									<label class="radiobox off" for="time1_3">
+										<input type="radio" class="rdi" id="time1_3" name="set_interview_time" value="3" onclick="fn_time_set(this);">
+									</label>
+									<span>10:00~10:25</span>
+								</li>
+								
+								<li>
+									<label class="radiobox off" for="time1_4">
+										<input type="radio" class="rdi" id="time1_4" name="set_interview_time" value="4" onclick="fn_time_set(this);">
+									</label>
+									<span>10:30~10:55</span>
+								</li>
+								
+								<li>
+									<label class="radiobox off" for="time1_5">
+										<input type="radio" class="rdi" id="time1_5" name="set_interview_time" value="5" onclick="fn_time_set(this);">
+									</label>
+									<span>11:00~11:25</span>
+								</li>
+								
+								<li>
+									<label class="radiobox off" for="time1_6">
+										<input type="radio" class="rdi" id="time1_6" name="set_interview_time" value="6" onclick="fn_time_set(this);">
+									</label>
+									<span>11:30~11:55</span>
+								</li>
+								
+							</ul>
+							<ul class="t_ul">
+								
+								<li>
+									<label class="radiobox on" for="time1_7">
+										<input type="radio" class="rdi" id="time1_7" name="set_interview_time" value="7" onclick="fn_time_set(this);">
+									</label>
+									<span>13:00~13:25</span>
+								</li>
+								
+								<li>
+									<label class="radiobox off" for="time1_8">
+										<input type="radio" class="rdi" id="time1_8" name="set_interview_time" value="8" onclick="fn_time_set(this);">
+									</label>
+									<span>13:30~13:55</span>
+								</li>
+								
+								<li>
+									<label class="radiobox off" for="time1_9">
+										<input type="radio" class="rdi" id="time1_9" name="set_interview_time" value="9" onclick="fn_time_set(this);">
+									</label>
+									<span>14:00~14:25</span>
+								</li>
+								
+								<li>
+									<label class="radiobox off" for="time1_10">
+										<input type="radio" class="rdi" id="time1_10" name="set_interview_time" value="10" onclick="fn_time_set(this);">
+									</label>
+									<span>14:30~14:55</span>
+								</li>
+								
+							</ul>
+							<ul class="t_ul">
+								
+								<li>
+									<label class="radiobox off" for="time1_11">
+										<input type="radio" class="rdi" id="time1_11" name="set_interview_time" value="11" onclick="fn_time_set(this);">
+									</label>
+									<span>15:00~15:25</span>
+								</li>
+								
+								<li>
+									<label class="radiobox off" for="time1_12">
+										<input type="radio" class="rdi" id="time1_12" name="set_interview_time" value="12" onclick="fn_time_set(this);">
+									</label>
+									<span>15:30~15:55</span>
+								</li>
+								
+							</ul>
+						</div>
+
+						<div class="sel_area">
+							<p>일자 및 시간을 선택해 주세요.</p>
+						</div>
+
+						<div class="btn_area">
+					
+							<a href="#" onclick="javascript:alert('개인회원 로그인 후 컨설팅 신청 가능합니다.'); goLogin();" class="btn purple">Step3. 컨설팅 신청하기</a>
+							
+							<a href="#" onclick="javascript:alert('개인회원 로그인 후 컨설팅 신청 가능합니다.'); goLogin();" class="btn purple">Step3. 컨설팅 신청현황</a>
+					
+
+						</div>
+					</div>
+
+				</div><!-- consul_moth -->
+
+				<div class="chk_point">
+					<p>Check Point!</p>
+					<ul>
+						<li>* 원활한 구직자 컨설팅을 위해 이름, 최종학력, 나이, 희망직무가 필요합니다.</li>
+						<li>* 구직자 컨설팅은 로그인 후 신청할 수 있습니다. 박람회 회원으로 가입하고 로그인 후 신청 바랍니다.</li>
+						<li>* 구직자 컨설팅은 당일 신청이 불가하고, 예약 취소는 My page > 구직자 컨설팅 신청 현황 메뉴에서 취소가 가능합니다. (컨설팅 당일 취소는 불가)</li>
+						<li>* 구직자 컨설팅은 해당된 표기일에만 신청이 가능하며, 예약이 완료된 일시에는 신청이 불가합니다.</li>
+						<li>* 로그인 후 우측의 컨설팅 신청 현황 확인 버튼을 클릭하시면, 컨설팅 신청 내역을 확인할 수 있습니다.</li>
+					</ul>
+				</div><!-- chk_point -->
+
+			</div><!-- consul_area -->
+		</div>
+	</div><!-- .content -->
+
+</div>
+<!-- //본문 -->
+
+<!-- 컨설팅 신청정보 레이어 팝업 -->
+<div id="pop_request_consulting" style="display:none;">
+<div id="pop_dim" class="pop_dim"></div>
+<div id="popup" class="popup small">
+	<div class="pop_wrap">
+		<div class="pop_head">
+			<h3>구직자 컨설팅 신청 정보</h3>
+			<a href="javaScript:;" class="layer_close">×</a>	
+		</div>
+		<div class="pop_con">
+			<div class="consul_info">
+				<div class="tb_area" >
+					<table class="tb">
+						<colgroup>
+							<col style="width:25%;" />
+							<col />
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>이름</th>
+								<td><%=user_name%></td>
+							</tr>
+							<tr>
+								<th>희망직무</th>
+								<td>
+									<span class="selectbox">
+										<span class="">1차 직무 선택</span>
+										<select id="sel_jc1" name="sel_jc1" title="1차 직무 선택" onchange="fn_change_jc1(this.options[this.selectedIndex].value);">
+											<script language=JavaScript>
+												document.writeln("<option value='' selected>1차 직무를 선택해 주세요.</option>");
+												for(i=0; i<cat_fld1.length; i++)
+												document.writeln("<option value=" + cat_fld1[i][0] + ">" + cat_fld1[i][1] + "</option>");
+											</script>											
+										</select>
+									</span>
+									<br>
+									<span class="selectbox">
+										<span id="set_jc2_txt" class="">2차 직무 선택</span>
+										<select id="sel_jc2" name="sel_jc2" title="2차 직무 선택">
+											<option value="">2차 직무를 선택해 주세요.</option>
+										</select>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<th>사전질문</th>
+								<td>
+									<textarea name="consult_question"></textarea>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<!-- <p style="color:#006fdd;">세부적이고 최적화된 개인 맞춤형 컨설팅 결과를 얻기 위해 필요한 기본 항목이므로 정확한 정보를 입력해 주시기 바랍니다.</p> -->
+
+		<div class="pop_footer">
+			<div class="btn_area">
+				<a href="javascript:void(0)" onclick="fn_submit(); return false;" class="btn blue">컨설팅 신청하기</a>
+			</div>
+		</div>
+	</div>				
+</div>
+</div>
+<!-- //컨설팅 신청정보 레이어 팝업 -->
+
+
+</form>
+
+<!-- 하단 -->
+    <div id="footer">
+        <div class="footer-wrap">
+            <div class="footer_logo">
+                <img src="../images/footer_logo.png" alt="footer로고">
+            </div>
+            <div class="privacyArea">
+                <a href="#privacyPop" class="btn">개인정보처리방침</a>
+                <p class="manage">2021 광주권 온라인 채용박람회 공식 홈페이지는 [취업포털 커리어]가<br>제작 및 유지보수를 담당하고 있습니다.</p>
+                <p class="help">TEL. TEL. 02-2006-6131~3 | FAX. 02-2006-9594 | E-mail. gjmoel@career.co.kr</p>
+                <p class="company_info">상호명. 커리어넷 | 대표자명. 윤태운 | 사업자등록번호. 220-86-73547</p>
+                <p class="copyright">Copyright. &copy; 취업포털 커리어. all rights reserved.</p>
+            </div><!-- .util-area -->
+
+            <div class="InternetSafe">
+                <strong>인터넷 사이트 안전마크</strong>
+                <p>2021 광주권 온라인 채용박람회 공식 홈페이지는 개인정보 보호를 위한<br>
+                    관련법령의 의무사항을 준수하고 있습니다.</p>
+            </div><!-- .address -->
+        </div><!-- .inner-wrap -->
+    </div>
+    <!-- //하단 -->
+
+</body>
+</html>
